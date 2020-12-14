@@ -16,12 +16,19 @@
     	}
     	body{
     		overflow: auto;
+            clear: both;
     	}
+        #all{
+            margin: 0px auto;
+            width:1264px;
+        }
     	.start{
     		display: block;
-    		width:100%;
-    		height:601px;
+            position: relative;
     	}
+        .whole{
+            margin:0 auto;
+        }
     	.text{
     		width:200px;
     		height:40px;
@@ -35,6 +42,8 @@
     		background-image: url(images/bg.jpg);
     		background-attachment:fixed;
     		display: none;
+            width:100%;
+            height:100%;
     	}
     	.nav{
     		float: left;
@@ -70,7 +79,7 @@
 		.searc{
 			float:left;
 			width:40px;
-			height:40px;
+			height:42px;
 			margin:20px 0 0 0;
 			background-image: url(images/search.png);
 			background-position: center;
@@ -140,7 +149,7 @@
 <body>
 	<div class="all" id="all">
 		<div class="start" id="start">
-			<img src="images/whole.jpg"  alt="whole" />
+			<img src="images/whole.jpg"  alt="whole" class="whole" />
 			<div class="text">
 				<p>进入鹿鹿的时光礼记</p>
 				<input type="button" value="点击进入" onclick="change()"/>
@@ -149,12 +158,12 @@
 		<div class="box" id="box">
 			<div class="header">
 				<ul class="nav">
-                	<li><a href="#">个人百科</a></li>
-           	    	<li><a href="#">音乐作品</a></li>
-               		<li><a href="#">影视作品</a></li>
-               		<li><a href="#">获奖记录</a></li>
-               		<li><a href="#">综艺</a></li>
-               		<li><a href="#">写真集</a></li>
+                	<li><a href="https://baike.baidu.com/item/%E9%B9%BF%E6%99%97" target="_blank">个人百科</a></li>
+           	    	<li><a href="https://y.qq.com/n/yqq/singer/001SqkF53OEhdO.html" target="_blank">音乐作品</a></li>
+               		<li><a href="https://baike.baidu.com/item/%E9%87%8D%E8%BF%9420%E5%B2%81/13028826" target="_blank">影视作品</a></li>
+               		<li><a href="https://baike.baidu.com/item/%E9%B9%BF%E6%99%97%E6%95%88%E5%BA%94/13004994" target="_blank">获奖记录</a></li>
+               		<li><a href="https://kan.2345.com/zongyi/top/luhan.html" target="_blank">综艺</a></li>
+               		<li><a href="https://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gb18030&word=%C2%B9%EA%CF%D0%B4%D5%E6&fr=ala&ala=1&alatpl=adress&pos=0&hs=2&xthttps=000000" target="_blank">写真集</a></li>
            		</ul>
            		<form class="form">
                		<input type="text" value="请输入关键词" class="search" id="search" />
